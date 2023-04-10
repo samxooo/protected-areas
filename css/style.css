@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper,
+.slidder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slidder-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-section {
+  background-image: url("/assets/images/wallpaper5.webp");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.text-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.text-side h1 {
+  color: rgb(253, 85, 66);
+}
+
+.text-side p {
+  color: #fff;
+  font-weight: 550;
+}
+
+.read-more {
+  background-color: rgb(255, 62, 40);
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+
+.read-more:hover {
+  background-color: #fff;
+  color: rgb(255, 62, 40);
+  border: 1px solid rgb(255, 62, 40);
+}
+
+.other-section {
+  margin-top: 20px;
+}
+
+.protected-areas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.text-area {
+  color: grey;
+  width: 40%;
+}
+
+.image-side {
+  width: 60%;
+}
+
+.nature-image {
+  width: 40rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-area-title {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.protected-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+.protected-container .text-side {
+  width: 45%;
+}
+
+.image-side-area {
+  width: 40%;
+}
+
+.images {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+iframe {
+  margin-top: 10px;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f4f0eb;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 2;
+}
+
+.bi-arrow-up {
+  font-size: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.carousel-caption p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 128, 0.45);
+    border-radius: 5px;
+}
+
+.car-img {
+    height: 45rem;
+    background-position: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer {
+  height: 350px;
+  background-color: #72a0c1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-container ul {
+  margin-left: 50px;
+}
+
+.footer-container a {
+  color: white;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-side {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cards div {
+    margin: 10px;
+  }
+
+  .text-area {
+    width: 100%;
+  }
+
+  .image-side {
+    width: 100%;
+  }
+
+  .nature-image {
+    width: 20rem;
+    height: auto;
+  }
+
+  .protected-container {
+    flex-direction: column;
+  }
+
+  .image-side-area {
+    width: 100%;
+  }
+
+  .protected-container .text-side {
+    width: 100%;
+  }
+
+  .protected-container .image-side-area {
+    width: 100%;
+  }
+
+  .protected-container div {
+    margin-top: 20px;
+  }
+
+  .images {
+    width: 15rem;
+    padding: 10px;
+    height: 10rem;
+  }
+
+  iframe {
+    width: 22rem;
+    height: 15rem;
+  }
+
+  .car-img {
+    height: 20rem;
+    background-position: center;
+}
+
+.video-container iframe {
+  width: 350px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-button {
+    display: none;
+  }
+
+  .bi-arrow-up {
+    display: none;
+  }
+}
